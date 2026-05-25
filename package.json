@@ -1,7 +1,7 @@
 {
   "name": "@pirxpilot/nanologger",
   "description": "Cute browser logs",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "type": "module",
   "devDependencies": {
     "@biomejs/biome": "^2.4.15"
