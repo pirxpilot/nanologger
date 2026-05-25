@@ -1,13 +1,15 @@
-# nanologger [![stability][0]][1]
-[![npm version][2]][3] [![build status][4]][5]
-[![downloads][8]][9] [![js-standard-style][10]][11]
+[![NPM version][npm-image]][npm-url]
+[![Build Status][build-image]][build-url]
+[![Dependency Status][deps-image]][deps-url]
+
+# nanologger
 
 Cute browser logger.
 
 ## Usage
 ```js
-var nanologger = require('nanologger')
-var log = nanologger('my-cool-logger')
+import Nanologger from '@pirxpilot/nanologger'
+const log = new Nanologger('my-cool-logger')
 
 log.debug('it works!')
 log.info('hey')
@@ -48,16 +50,11 @@ Emit a message at loglevel 💀
 ## License
 [MIT](https://tldrlegal.com/license/mit-license)
 
-[0]: https://img.shields.io/badge/stability-experimental-orange.svg?style=flat-square
-[1]: https://nodejs.org/api/documentation.html#documentation_stability_index
-[2]: https://img.shields.io/npm/v/nanologger.svg?style=flat-square
-[3]: https://npmjs.org/package/nanologger
-[4]: https://img.shields.io/travis/choojs/nanologger/master.svg?style=flat-square
-[5]: https://travis-ci.org/choojs/nanologger
-[6]: https://img.shields.io/codecov/c/github/choojs/nanologger/master.svg?style=flat-square
-[7]: https://codecov.io/github/choojs/nanologger
-[8]: http://img.shields.io/npm/dm/nanologger.svg?style=flat-square
-[9]: https://npmjs.org/package/nanologger
-[10]: https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square
-[11]: https://github.com/feross/standard
-[12]: https://github.com/choojs/nanologger/blob/master/index.js#L22-L34
+[npm-image]: https://img.shields.io/npm/v/@pirxpilot/nanologger
+[npm-url]: https://npmjs.org/package/@pirxpilot/nanologger
+
+[build-url]: https://github.com/pirxpilot/nanologger/actions/workflows/check.yaml
+[build-image]: https://img.shields.io/github/actions/workflow/status/pirxpilot/nanologger/check.yaml?branch=main
+
+[deps-image]: https://img.shields.io/librariesio/release/npm/@pirxpilot/nanologger
+[deps-url]: https://libraries.io/npm/@pirxpilot%2Fnanologger

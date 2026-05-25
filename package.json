@@ -1,5 +1,5 @@
 {
-  "name": "nanologger",
+  "name": "@pirxpilot/nanologger",
   "description": "Cute browser logs",
   "version": "2.0.0",
   "type": "module",
@@ -12,8 +12,14 @@
     "log"
   ],
   "license": "MIT",
-  "repository": "choojs/nanologger",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pirxpilot/nanologger.git"
+  },
   "scripts": {
     "test": "make check"
-  }
+  },
+  "files": [
+    "index.js"
+  ]
 }
