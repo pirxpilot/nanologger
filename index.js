@@ -75,7 +75,11 @@ export default class Nanologger {
     const emoji = emojis[level];
 
     const msgColor =
-      level === 'error' || level.fatal ? this._colors.red : level === 'warn' ? this._colors.yellow : this._colors.green;
+      level === 'error' || level === 'fatal'
+        ? this._colors.red
+        : level === 'warn'
+          ? this._colors.yellow
+          : this._colors.green;
 
     const objs = [];
     const args = [null];

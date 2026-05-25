@@ -114,6 +114,14 @@ describe('Nanologger', () => {
       assert.ok(args.includes(42));
     });
 
+    it('fatal() uses red color in format args', () => {
+      consoleMock.mock.resetCalls();
+      const log = new Nanologger('test', { colors: { red: '#ff0000' } });
+      log.fatal('boom');
+      const args = consoleMock.mock.calls[0].arguments;
+      assert.ok(args.some(a => typeof a === 'string' && a.includes('#ff0000')));
+    });
+
     it('appends object arguments at the end', () => {
       consoleMock.mock.resetCalls();
       const log = new Nanologger('test');
