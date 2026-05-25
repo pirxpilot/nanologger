@@ -2,12 +2,9 @@
   "name": "nanologger",
   "description": "Cute browser logs",
   "version": "2.0.0",
-  "dependencies": {},
+  "type": "module",
   "devDependencies": {
-    "dependency-check": "^2.8.0",
-    "nyc": "^10.1.2",
-    "standard": "^9.0.0",
-    "tape": "^4.6.3"
+    "@biomejs/biome": "^2.4.15"
   },
   "keywords": [
     "browser",
@@ -17,8 +14,6 @@
   "license": "MIT",
   "repository": "choojs/nanologger",
   "scripts": {
-    "deps": "dependency-check . && dependency-check . --extra --no-dev",
-    "start": "node .",
-    "test": "standard && npm run deps"
+    "test": "make check"
   }
 }
